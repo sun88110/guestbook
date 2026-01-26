@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM eclipse-termurin:21-jdk
 
 ARG VERSION
 
@@ -16,3 +16,4 @@ VOLUME /app/upload
 WORKDIR $APP_HOME
 ENTRYPOINT ["java"]
 CMD ["-jar", "guestbook.jar"]
+
